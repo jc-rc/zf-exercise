@@ -40,6 +40,12 @@ function ContainerOne() {
                         <label htmlFor="" className="form-label">Migration Mode</label>
                         <div className="form-check form-switch">
                             
+                            {/* Every input:
+                                - has an onChange event listener that triggers the same function.
+                                - has a [defaultValue], (or [defaultChecked]) directly from the main slice state.
+                                - has a [name] attribute that will help build the FormData
+
+                             */}
                             <input
                                 type="checkbox"
                                 name='migrationMode'
